@@ -167,7 +167,7 @@ body {
 
 #mogip {
     position: absolute;
-    accent-color: red;
+    accent-color: #3393f4;
     margin-left: 20px;
     margin-top: 5px;
     width: 20px;
@@ -179,4 +179,17 @@ body {
     margin-left: 45px;
     margin-top: 2px;
     font-size: 18px;
+}
+
+.write{
+    margin-left: 710px;
+    padding: 10px 30px;
+    border: none;
+    border-color: #3393f4;
+    border-radius: 5px;
+    background-color: #3393f4;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
 }
