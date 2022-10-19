@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mypage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
     <title>마이페이지
 
     </title>
@@ -14,11 +17,11 @@
         <div id="asideWrap" class="active">
             <div class="sideNav -first">
                 <ul>
-                    <li class="first_Nav">
+                    <li class="first_Nav" style="background-color: #3393f4;">
                         <a>
-                            <span>내 정보</span>
+                        <span style="color: #fff;">내 정보</span>
                         </a>
-                    </li>
+                    </li> 
                     <li>
                         <a>
                         <span>회원 정보 변경</span>
@@ -28,9 +31,9 @@
             </div> 
             <div class="sideNav -second">
                 <ul>
-                    <li class="first_Nav">
+                    <li class="first_Nav" style="background-color: #3393f4;">
                         <a>
-                        <span>나의 활동</span>
+                        <span style="color: #fff;">나의 활동</span>
                         </a>
                     </li> 
                     <li>
@@ -38,11 +41,6 @@
                         <span>내 글</span>
                         </a>
                     </li> 
-                    <li>
-                        <a>
-                        <span>내 댓글</span>
-                        </a>
-                    </li>
                     <li>
                         <a>
                         <span>내 책갈피</span>
@@ -53,7 +51,7 @@
         </div>
         <main id = "content" role="main" class="more">
             <section class="sMypage">
-                <h1 class="sMypageTitle">내 정보 - <span style="font-size: 12px;">회원 정보 변경</span></h1>
+                <h1 class="sMypageTitle" style="background-color: #3393f4; color: #fff;">내 정보</h1>
                 <div>
                     <div class="sMypageProfile">
                         <h2 class="sMypageSubTitle">사용중인 프로필</h2>
@@ -98,7 +96,7 @@
                                         </div>
                                     </div>
                                     <div class="btn">
-                                        <a href="#" class="uButton -sizeS -confirm _btnUpdateGender">확인</a>
+                                        <a href="#" class="uButton -sizeS -confirm" id="_btnUpdateGender">확인</a>
                                     </div>
                                 </li>
                             </ul>
@@ -961,18 +959,98 @@
                                         <label class="gSrOnly" for="hp_view905">휴대폰 번호</label>
                                         <input type="text" class="_inputPhoneNumber" id="hp_view905" placeholder="휴대폰 번호" value="">
                                     </div>
-                                    <button class="infoIcon -help _btnPhoneHelpGuide">
-                                        
-                                    </button>
+                                    <button type="button" class="infoIcon -help" id="_btnPhoneHelpGuide">
+                                    </button></div>
+                                <div class="btn-phone">
+                                    <a href="#" class="uButton -sizeS -confirm3" id = "_btnPhoneNumberChan">확인</a>
+                                    <a href="#" class="uButton -sizeS -confirm3 _btnPhoneNumberDel">취소</a>
+                                </div>
+                            </div>
+                            <p class="uTableList"><span class="cell label -desc -help">휴대폰 번호는 로그인을 위해 저장되며, 사이트 이용기간 동안 보관되는 것에 동의합니다.</span></p>
+                            <div class="sMypageAccountItem _emailTextPanel" style="display: none;">
+                                <div class="label">이메일</div>
+                                <div class="content"></div>
+                                <div class="btn">
+                                    <a href="#" class="uButton -sizeS -confirm3 _btnChangeEmail">변경</a>
+                                </div>
+                            </div>
+                            <div class="sMypageAccountItem _emailActionPanel">
+                                <label class="label" for="email_view630">이메일</label>
+                                <div class="content">
+                                    <div class="uInput -simpleLine" style="width: 259px;">
+                                        <input type="text" id="email_view630" placeholder="이메일 주소 입력" value class="_inputEmail">
+                                    </div>
+                                    <span class="infoIcon -error">
+                                            <span class="gSrOnly">설정값 오류</span>
+                                    </span>
                                 </div>
                                 <div class="btn">
-                                    <a href="#" class="uButton -sizeS -confirm3 _btnPhoneNumberChan">변경</a>
-                                    <a href="#" class="uButton -sizeS -confirm3 _btnPhoneNumberDel">삭제</a>
+                                    <button type="button" class="uButton -sizeS -confirm" id="_btnUpdateEmail">확인</button>
+                                </div>
+                            </div>
+                            <p class="uTableList">
+                                <span class="cell label -desc">이메일 주소는 로그인을 위해 저장되며, 사이트 이용기간 동안 보관되는 것에 동의합니다.</span>
+                            </p>
+                            <div class="sMypageAccountItem">
+                                <div class="label">비밀번호</div>
+                                <div class="content"></div>
+                                <div class="btn">
+                                <a href="#" class="uButton -sizeS -confirm3 _btnChangePassword">변경</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sMypageConnect">
+                        <div class="sMypageConntetTitleBox">
+                            <h2 class="sMypageInnetTitle">연결된 서비스</h2>
+                            <dl class="uHelpGuid -up gInlingBlock">
+                                <dt>
+                                    <button type="button" class="_btnHelpGuide">
+                                        <span class="gSrOnly">도움말</span>
+                                    </button>
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="sMypageConnectCont">
+                            <div class="sMypageConnectItem">
+                                <div class="icon">
+                                    <span class="">
+                                        <span class="gSrOnly">첫번째 연동</span>
+                                    </span>
+                                </div>
+                                <div class="content">아이디로 연결할 수 있습니다.</div>
+                                <div class="btn">
+                                    <button type="button" class="uButton -sizeS -confirm3 _btnConnectFirstSite">연결하기</button>
+                                </div>
+                            </div>
+                            <div class="sMypageConnectItem">
+                                <div class="icon">
+                                    <span class="">
+                                        <span class="gSrOnly">두번째 연동</span>
+                                    </span>
+                                </div>
+                                <div class="content">아이디로 연결할 수 있습니다.</div>
+                                <div class="btn">
+                                    <button type="button" class="uButton -sizeS -confirm3 _btnConnectFirstSite">연결하기</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sMypageConnect"></div>
+                    <div class="sMypageConnectOrganization">
+                        <div class="sMypageConntetTitleBox">
+                            <h2>소속 인증</h2>
+                        </div>
+                        <div class="sMypageConnectDocumnet">
+                            <div class="icon">
+                                <span class="">
+                                    <span class="gSrOnly">첫번째 연동</span>
+                                </span>
+                            </div>
+                            <div class="content">증명서류를 제출할 수 있습니다.</div>
+                            
+                        </div><div class="btn">
+                                <button type="button" class="uButton -sizeS -confirm3 _btnConnectDocument">제출하기</button>
+                            </div>
+                    </div>
                 </div>
             </section>
         </main>
